@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="upload">
+<head>
+	<title></title>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/upload.js"></script>
+</head>
+<body ng-controller="upCtrl">
+<input type="file" my-dir="demo" />
+<input type="text" ng-model="name" />
+<button ng-click="up()">Upload</button>
+<img ng-src="{{ path }}"  height="200" width="200" />
+<p>{{ demo[0].name }}</p>
+</body>
+</html>
